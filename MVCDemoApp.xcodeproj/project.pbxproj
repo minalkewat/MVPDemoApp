@@ -14,6 +14,8 @@
 		16B13AB522AF993700B21343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16B13AB322AF993700B21343 /* LaunchScreen.storyboard */; };
 		16B13AC022AF993700B21343 /* MVCDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B13ABF22AF993700B21343 /* MVCDemoAppTests.swift */; };
 		16B13ACB22AF993700B21343 /* MVCDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B13ACA22AF993700B21343 /* MVCDemoAppUITests.swift */; };
+		16B13ADC22AF9E2700B21343 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B13ADB22AF9E2700B21343 /* User.swift */; };
+		16B13ADE22AFA05D00B21343 /* VCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B13ADD22AFA05D00B21343 /* VCPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		16B13AC622AF993700B21343 /* MVCDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVCDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B13ACA22AF993700B21343 /* MVCDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCDemoAppUITests.swift; sourceTree = "<group>"; };
 		16B13ACC22AF993700B21343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16B13ADB22AF9E2700B21343 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		16B13ADD22AFA05D00B21343 /* VCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,9 @@
 		16B13AA922AF993600B21343 /* MVCDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				16B13ADA22AF9E1000B21343 /* Presenter */,
+				16B13AD922AF9E0900B21343 /* View */,
+				16B13AD822AF9DFB00B21343 /* Model */,
 				16B13AAA22AF993600B21343 /* AppDelegate.swift */,
 				16B13AAC22AF993600B21343 /* ViewController.swift */,
 				16B13AAE22AF993600B21343 /* Main.storyboard */,
@@ -123,6 +130,29 @@
 				16B13ACC22AF993700B21343 /* Info.plist */,
 			);
 			path = MVCDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		16B13AD822AF9DFB00B21343 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				16B13ADB22AF9E2700B21343 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		16B13AD922AF9E0900B21343 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		16B13ADA22AF9E1000B21343 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				16B13ADD22AFA05D00B21343 /* VCPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B13AAD22AF993600B21343 /* ViewController.swift in Sources */,
+				16B13ADE22AFA05D00B21343 /* VCPresenter.swift in Sources */,
 				16B13AAB22AF993600B21343 /* AppDelegate.swift in Sources */,
+				16B13ADC22AF9E2700B21343 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2F5MW64QA;
 				INFOPLIST_FILE = MVCDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2F5MW64QA;
 				INFOPLIST_FILE = MVCDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
